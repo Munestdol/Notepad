@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="Notepad" Height="450" Width="800">
     <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="File" VerticalAlignment="Top" Height="25" Width="50">
+                <MenuItem Header="Create" Click="Create_Click"></MenuItem>
+                <MenuItem Header="Open" Click="Open_Click"></MenuItem>
+                <MenuItem Header="Save" Click="Save_Click"></MenuItem>
+                <MenuItem Header="Save as..." Click="SaveAs_Click"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Exit" Click="Exit_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <RichTextBox Margin="0,25,0,0" x:Name="rtb">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
 </Window>
